@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\FREE-OSINT\FREE-OSINT\bin\Debug\modules\FREE-OSINT_Report_Builder\</OutputPath>
+    <OutputPath>..\..\FREE-OSINT\FREE-OSINT\bin\Debug\modules\FREE-OSINT_Report_Builder\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FREE_OSINT_Lib">
-      <HintPath>..\FREE-OSINT\FREE_OSINT_Lib\bin\Debug\netstandard2.0\FREE_OSINT_Lib.dll</HintPath>
+      <HintPath>..\..\FREE-OSINT\FREE_OSINT_Lib\bin\Debug\netstandard2.0\FREE_OSINT_Lib.dll</HintPath>
     </Reference>
     <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
       <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>

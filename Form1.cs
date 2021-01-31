@@ -24,7 +24,7 @@ namespace FREE_OSINT_Report_Builder
         private object oRng;
         private object oEndOfDoc;
         private string description = "Generate word document using given treenodes.";
-        private string title = "FREE_OSINT_Report_Builder";
+        private string title = "FREE-OSINT Report Builder";
         private WdBuiltinStyle[] preset_styles;
 
         public Form1()
@@ -33,9 +33,9 @@ namespace FREE_OSINT_Report_Builder
             preset_styles[0] = WdBuiltinStyle.wdStyleHeading1;
             preset_styles[1] = WdBuiltinStyle.wdStyleHeading2;
             preset_styles[2] = WdBuiltinStyle.wdStyleHeading3;
-            preset_styles[3] = WdBuiltinStyle.wdStyleBodyText;
-            preset_styles[4] = WdBuiltinStyle.wdStyleBodyText;
-            InitializeComponent();
+            preset_styles[3] = WdBuiltinStyle.wdStyleHeading4;
+            preset_styles[4] = WdBuiltinStyle.wdStyleHeading5;
+            //InitializeComponent();
             //GenerateDocument(new List<TreeNode>());
         }
 
@@ -106,9 +106,10 @@ namespace FREE_OSINT_Report_Builder
                 Paragraph oPara2;
                 oRng = oDoc.Bookmarks.get_Item(ref oEndOfDoc).Range;
                 oPara2 = oDoc.Content.Paragraphs.Add(ref oRng);
-                oPara2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphJustify;
                 oPara2.Range.Text = node.Text;
                 oPara2.Range.set_Style(preset_styles[0]);
+                oPara2.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphJustify;
+                oPara2.Range.Font.Name = "Times New Roman";
                 oPara2.Range.Font.Bold = 1;
                 oPara2.Format.SpaceAfter = 4;
                 oPara2.Range.InsertParagraphAfter();
@@ -232,6 +233,7 @@ namespace FREE_OSINT_Report_Builder
 
         private void add_subnodes_to_paragraph(TreeNode node, int level)
         {
+            
             if (level == 1)
             {
                 foreach (TreeNode treeNode in node.Nodes)
@@ -243,6 +245,8 @@ namespace FREE_OSINT_Report_Builder
                     oPara3.Range.Text = treeNode.Text;
                     oPara3.Range.set_Style(preset_styles[level]);
                     oPara3.Range.Font.Bold = 0;
+                    oPara3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphJustify;
+                    oPara3.Range.Font.Name = "Times New Roman";
                     oPara3.Format.SpaceAfter = 6;
                     oPara3.Range.InsertParagraphAfter();
                     if (treeNode.Nodes.Count > 0)
@@ -259,13 +263,22 @@ namespace FREE_OSINT_Report_Builder
                     Paragraph oPara3;
                     oRng = oDoc.Bookmarks.get_Item(ref oEndOfDoc).Range;
                     oPara3 = oDoc.Content.Paragraphs.Add(ref oRng);
+                    
                     oPara3.Range.Text = treeNode.Text;
                     if(level == 1)
                     {
                         oPara3.Range.set_Style(preset_styles[level]);
-
                     }
-                    oPara3.Range.set_Style(WdBuiltinStyle.wdStyleBodyText);
+                    if (treeNode.Nodes.Count > 0)
+                    {
+                        oPara3.Range.set_Style(preset_styles[level]);
+                    }
+                    else
+                    {
+                        oPara3.Range.set_Style(WdBuiltinStyle.wdStyleBodyText);
+                    }
+                    oPara3.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphJustify;
+                    oPara3.Range.Font.Name = "Times New Roman";
                     oPara3.Range.Font.Bold = 0;
                     oPara3.Format.SpaceAfter = 6;
                     oPara3.Range.InsertParagraphAfter();

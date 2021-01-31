@@ -22,3 +22,13 @@ C:\Users\Nekki\source\repos\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Repor
 C:\Users\Nekki\source\repos\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.csproj.CopyComplete
 C:\Users\Nekki\source\repos\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.exe
 C:\Users\Nekki\source\repos\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.pdb
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT\FREE-OSINT\bin\Debug\modules\FREE-OSINT_Report_Builder\FREE-OSINT_Report_Builder.exe.config
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT\FREE-OSINT\bin\Debug\modules\FREE-OSINT_Report_Builder\FREE-OSINT_Report_Builder.exe
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT\FREE-OSINT\bin\Debug\modules\FREE-OSINT_Report_Builder\FREE-OSINT_Report_Builder.pdb
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.csproj.ResolveComReference.cache
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE_OSINT_Report_Builder.Properties.Resources.resources
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.csproj.GenerateResource.cache
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.csproj.CoreCompileInputs.cache
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.csproj.CopyComplete
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.exe
+C:\Users\Nekki\source\repos\Nekkilodeon\FREE-OSINT_Report_Builder\obj\Debug\FREE-OSINT_Report_Builder.pdb
