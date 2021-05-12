@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FREE_OSINT_Lib;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
 using Microsoft.Office.Interop.Word;
 using System.Reflection;
 
@@ -18,7 +16,6 @@ namespace FREE_OSINT_Report_Builder
 {
     public partial class Form1 : Form, IReport_module, IGeneral_module
     {
-        private PdfDocument s_document;
         private _Application oWord;
         private _Document oDoc;
         private object oRng;
@@ -44,7 +41,7 @@ namespace FREE_OSINT_Report_Builder
             return description;
         }
 
-        public PdfDocument GenerateDocument(object infoToPdf)
+        public object GenerateDocument(object infoToPdf)
         {
             List<TreeNode> treeNodes = (List<TreeNode>)infoToPdf;
             /*

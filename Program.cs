@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FREE_OSINT_Lib;
-using PdfSharp.Pdf;
 
 namespace FREE_OSINT_Report_Builder
 {
